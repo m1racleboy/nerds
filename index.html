@@ -1,12 +1,178 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+  <body class="page-body">
+    <header class="header">
+      <div class="header-container">
+          <a href="index.html" class="main-logo">
+            <img src="img/nerds-logo.svg" alt="Логотип - Нёрдс">
+          </a>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a href="#">Студия</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#">Клиенты</a>
+              </li>
+              <li class="navigation-item">
+                <a href="catalog.html">Магазин</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#">Корзина</a>
+        </div>
+    </header>
+    <main>
+      <section class="slider">
+        <h1 class="visually-hidden">Слайдер с преимуществами компании</h1>
+        <div class="slider-container">
+          <ul class="slide-list">
+            <li class="slide-item slide-item-show">
+              <div class="slide-information">
+                <p class="slide-title">
+                  Долго, дорого, скрупулезно.
+                </p>
+                <p class="slide-description">
+                  Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                </p>
+                <a href="#" class="slide-button">Узнать больше</a>
+              </div>
+              <div class="slide-img-wrapper">
+                <img src="img/nerds-slide-1.png" alt="">
+              </div>
+            </li>
+            <li class="slide-item">
+              <div class="slide-information">
+                <p class="slide-title">
+                  Любим математику как никто другой
+                </p>
+                <p class="slide-description">
+                  Никакого креатива, только математические формулы для расчета идеальных пропорций
+                </p>
+                <a href="#" class="slide-button">Узнать больше</a>
+              </div>
+              <div class="slide-img-wrapper">
+                <img src="img/nerds-slide-2.png" alt="">
+              </div>
+            </li>
+            <li class="slide-item">
+              <div class="slide-information">
+                <p class="slide-title">
+                  Только ночь, только хардкор
+                </p>
+                <p class="slide-description">
+                  Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+                </p>
+                <a href="#" class="slide-button">Узнать больше</a>
+              </div>
+              <div class="slide-img-wrapper">
+                <img src="img/nerds-slide-3.png" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="main-container">
+        <section class="products">
+          <h2 class="visually-hidden">Предлагаемая продукция</h2>
+          <ul class="products-list">
+            <li class="product-item">
+              <img src="img/illustration-1.jpg" alt="">
+              <h3 class="product-title">Веб-сайты</h3>
+              <p class="product-description">
+                Мир никогда не будет прежним после того как увидит ваш сайт!
+              </p>
+              <a href="#" class="product-button">Заказать</a>
+            </li>
+            <li class="product-item">
+              <img src="img/illustration-2.jpg" alt="">
+              <h3 class="product-title">Приложения</h3>
+              <p class="product-description">
+                Покорите топ-10 приложений в AppStore и Google Play
+              </p>
+              <a href="#" class="product-button">Заказать</a>
+            </li>
+            <li class="product-item">
+              <img src="img/illustration-3.jpg" alt="">
+              <h3 class="product-title">Презентация</h3>
+              <p class="product-description">
+                Вы даже не подозреваете, насколько вы изумительны!
+              </p>
+              <a href="#" class="product-button">Заказать</a>
+            </li>
+          </ul>
+        </section>
+        <section class="about-us">
+          <div class="about-us-left-wrapper">
+            <h2 class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+            <p class="about-us-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <p class="about-us-work-title">Выполняем заказы на разработку:</p>
+            <ul class="about-us-work-list">
+              <li class="about-us-work-item">Веб-сайтов любой сложности</li>
+              <li class="about-us-work-item">Мобильных приложений для iOS и Android</li>
+              <li class="about-us-work-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="about-us-right-wrapper">
+            <img src="img/nerds-about-us.png" alt="">
+            <p>с 2004 года Любим точность во всем:</p>
+            <dl>
+              <dt>Уровень самоотдачи</dt>
+              <dd>146%</dd>
+              <dt>Соблюдение сроков</dt>
+              <dd>100%</dd>
+              <dt>Минимальная предоплата</dt>
+              <dd>50%</dd>
+            </dl>
+          </div>
+        </section>
+        <section class="partners">
+          <h2 class="visually-hidden">Партнеры</h2>
+          <ul>
+            <li><a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/brand-1.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brand-2.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brand-3.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brand-4.png" alt=""></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <img src="img/map.png" alt="">
+      <section class="nerds-info">
+        <h2 class="nerds-info-title">NЁRDS DESIGN STUDIO</h2>
+        <address class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <button class="write-us-button">Напишите нам</button>
+      </section>
+      <section class="noname">
+        <ul class="social-list">
+          <li class="social-item"><a href="#"></a></li>
+          <li class="social-item"><a href="#"></a></li>
+          <li class="social-item"><a href="#"></a></li>
+        </ul>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
+    <section class="modal-write-us"></section>
+    <script src="js/main.js"></script>
   </body>
 </html>
