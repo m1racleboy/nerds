@@ -7,7 +7,72 @@
     <link href="css/style.css" rel="stylesheet" >
 </head>
 <body>
-    
-    <script src="js/main.js"></script>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="main-logo">
+              <img src="img/nerds-logo.svg" alt="Логотип - Нёрдс">
+            </a>
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a href="#">Студия</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="#">Клиенты</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="catalog.html">Магазин</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#">Корзина</a>
+          </div>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <img src="img/map.png" alt="">
+        <section class="nerds-info">
+          <h2 class="nerds-info-title">NЁRDS DESIGN STUDIO</h2>
+          <address class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <button class="write-us-button">Напишите нам</button>
+        </section>
+        <section class="noname">
+          <ul class="social-list">
+            <li class="social-item"><a href="#"></a></li>
+            <li class="social-item"><a href="#"></a></li>
+            <li class="social-item"><a href="#"></a></li>
+          </ul>
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+    </footer>
+      <section class="modal-write-us">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+          <div class="form-input-wrapper">
+            <div class="wrapper-column">
+              <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+              <input type="text" class="write-us-input" name="name" id="write-us-name" placeholder="Имя Фамилия">
+            </div>
+            <div class="wrapper-column">
+              <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+              <input type="email" class="write-us-input" name="email" id="write-us-email" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="wrapper-column">
+            <label class="write-us-label" for="write-us-text">Текст письма:</label>
+            <textarea class="write-us-textarea" name="text" id="write-us-text" placeholder="В свободной форме"></textarea>
+          </div>
+          <button type="submit" class="button" aria-label="Кнопка отправки формы обратной связи">Отправить</button>
+        </form>
+        <button type="button" class="modal-close close-write-us" aria-label="Закрыть"></button>
+      </section>
+      <script src="js/main.js"></script>
 </body>
 </html>
