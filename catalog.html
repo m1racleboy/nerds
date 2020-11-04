@@ -119,14 +119,24 @@
       </section>
       <section class="cards">
         <h2 class="visually-hidden">Каталог</h2>
-        <div class="card-breadcrumbs">
-          <p class="breadcrumbs-title">Сортировать:</p>
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item breadcrumbs-current">По цене</li>
-            <li class="breadcrumbs-item">По типу</li>
-            <li class="breadcrumbs-item">По названию</li>
-            <li class="breadcrumbs-button"><button class="button-down breadcrumbs-button-current"></button></li>
-            <li class="breadcrumbs-button"><button class="button-up"></button></li>
+        <div class="sorting-wrapper">
+          <p class="sorting-title">Сортировать:</p>
+          <ul class="sorting-list">
+            <li class="sorting-item sorting-current">По цене</li>
+            <li class="sorting-item">По типу</li>
+            <li class="sorting-item">По названию</li>
+          </ul>
+          <ul class="button-list">
+            <li class="button-item"><button class="button-down sorting-button-current" aria-label="Сорировать по убыванию">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 10H11L5.5 0L0 10Z" fill="black"/>
+                </svg> 
+            </button></li>
+            <li class="button-item"><button class="button-up" aria-label="Сорировать по возрастанию">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 0L0 0L5.5 10L11 0Z" fill="black"/>
+                </svg> 
+            </button></li>
           </ul>
         </div>
         <div class="cards-container">
@@ -136,7 +146,7 @@
               </svg>
             <img class="card-img" src="img/img-sedona.png" width="358" height="578" alt="Изображение сайта Sedona">
             <div class="card-info">
-              <h3 class="card-title">Sedona</h3>
+              <h3 class="card-title"><a class="card-link" href="#">Sedona</a></h3>
               <p class="card-description">Информационный сайт<br>для туристов</p>
               <a href="#" class="card-price-button button">9 900 ₽</a>
             </div>
@@ -147,7 +157,7 @@
               </svg>
             <img class="card-img" src="img/img-pink.png" width="358" height="578" alt="Изображение сайта Pink">
             <div class="card-info">
-              <h3 class="card-title">Pink App</h3>
+              <h3 class="card-title"><a class="card-link"  href="#">Pink App</a></h3>
               <p class="card-description">Продуктовый лендинг<br>приложения для iOS и Android</p>
               <a href="#" class="card-price-button button">9 900 ₽</a>
             </div>
@@ -158,7 +168,7 @@
               </svg>
             <img class="card-img" src="img/img-barbershop.png" width="358" height="578" alt="Изображение сайта Barberhop Borodinski">
             <div class="card-info">
-              <h3 class="card-title">Barberhop Borodinski</h3>
+              <h3 class="card-title"><a class="card-link" href="#">Barberhop Borodinski</a></h3>
               <p class="card-description">Пушечные стрижки<br>и классные демки</p>
               <a href="#" class="card-price-button button">9 900 ₽</a>
             </div>
@@ -169,7 +179,7 @@
               </svg>
             <img class="card-img" src="img/img-mishka.png" width="358" height="578" alt="Изображение сайта Mishka">
             <div class="card-info">
-              <h3 class="card-title">Mishka</h3>
+              <h3 class="card-title"><a class="card-link" href="#">Mishka</a></h3>
               <p class="card-description">У меня такой никнейм в играх,<br>на 2 лвле возьму его</p>
               <a href="#" class="card-price-button button">9 900 ₽</a>
             </div>
@@ -180,7 +190,7 @@
               </svg>
             <img class="card-img" src="img/img-aplus.png" width="358" height="578" alt="Изображение сайта APlus">
             <div class="card-info">
-              <h3 class="card-title">Aplus</h3>
+              <h3 class="card-title"><a class="card-link" href="#">Aplus</a></h3>
               <p class="card-description">Если это не htmlacademy,<br>то отказываюсь</p>
               <a href="#" class="card-price-button button">9 900 ₽</a>
             </div>
@@ -191,7 +201,7 @@
               </svg>
             <img class="card-img" src="img/img-kvast.png" width="358" height="578" alt="Изображение сайта Kvast">
             <div class="card-info">
-              <h3 class="card-title">Кваст</h3>
+              <h3 class="card-title"><a class="card-link"  href="#">Kvast</a></h3>
               <p class="card-description">Сначала я подумал,<br>что это пиво</p>
               <a href="#" class="card-price-button button">9 900 ₽</a>
             </div>
